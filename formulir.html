@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showAlert() {
+            alert('Pendaftaran berhasil');
+            document.getElementById('form-pendaftaran').reset();
+        }
+    </script>
+</head>
+<body>
+
+<header>Wuri Wilatiningsih</header>
+
+<div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="formulir.html" class="active">Formulir</a>
+    <a href="tabel.html">Tabel</a>
+</div>
+
+<div class="content">
+    <h2>Pendaftaran</h2>
+    <form id="Form Pendaftaran" method="GET" onsubmit="showAlert(); return false;">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required>
+        
+        <label for="Tanggal lahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggal-lahir" name="tanggal-lahir" required>
+
+        <label for="jenis Kelamin">Jenis Kelamin:</label>
+        <input type="checkbox" name="hobi" value="pria">Pria<br>
+        <input type="checkbox" name="hobi" value="wanita">Wanita</label><br>
+
+        <label for="alamat">Alamat:</label>
+        <input type="text" id="alamat" name="alamat" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="pekerjaan">Pekerjaan:</label>
+        <input type="text" id="pekerjaan" name="pekerjaan" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<footer>UTS Pemweb Wuri Wilatiningsih</footer>
+
+</body>
+</html>
